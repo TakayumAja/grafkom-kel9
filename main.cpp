@@ -27,6 +27,7 @@ static void display(void)
     lapangan();
     garis_lapangan();
     gari_gawang();
+    garis_lingkaran(63,63,320,220);
 
     bola bola1;
     bola1.graphic();

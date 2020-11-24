@@ -58,6 +58,19 @@ void gari_gawang(){
 	glEnd();
 
 }
+const double PI=3.141592653589793;
+int i;
+
+void garis_lingkaran(int jari2, int jumlah_titik, int x_tengah, int y_tengah){
+ glBegin(GL_LINE_STRIP);
+ for (i=0;i<=360;i++){
+ float sudut=i*(2*PI/jumlah_titik);
+ float x=x_tengah+jari2*cos(sudut);
+ float y=y_tengah+jari2*sin(sudut);
+ glVertex2f(x,y);
+ }
+ glEnd();
+ }
 
 
 #endif // GARIS_PUTIH_LAPANGAN_H_INCLUDED
