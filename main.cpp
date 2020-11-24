@@ -26,7 +26,7 @@ static void display(void)
 
     lapangan();
     garis_lapangan();
-
+    gari_gawang();
 
     bola bola1;
     bola1.graphic();
